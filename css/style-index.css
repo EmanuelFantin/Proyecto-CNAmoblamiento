@@ -446,7 +446,7 @@ body {
   .cotizaciones{
     background: #DCDCDC;
     border-bottom: 1.5em;
-    border-radius: 5%;
+    border-radius: 5px;
   }
   .nombre-mensaje{
     width: 70%;
