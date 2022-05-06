@@ -12,7 +12,7 @@ categorias.forEach((categoria) => {
 		categoriaActiva = categoria.dataset.categoria;
 
 
-		// Activamos el contenedor de preguntas que corresponde
+		// activamos el contenedor de preguntas que corresponde
 		contenedorPreguntas.forEach((contenedor) => {
 			if(contenedor.dataset.categoria === categoriaActiva){
 				contenedor.classList.add('activo');
