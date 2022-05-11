@@ -1036,8 +1036,8 @@ body .container--flex {
 
 /*estilos del header*/
 .main-header {
-  padding: 0 15px;
   background: #212121;
+  padding: 0 15px;
 }
 .main-header .color-span {
   color: #EEAD33;

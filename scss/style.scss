@@ -1,6 +1,10 @@
 @import "./aos";
 @import "./var";
 
+@mixin bg-footer-header($bg-footer-header: $footer-header) {
+  background: $footer-header;
+}
+
  /*ver mas*/
 
  .main-ver-mas{
@@ -46,9 +50,11 @@ body {
   /*estilos del header*/
   
   .main-header {
+
+    @include bg-footer-header($bg-footer-header: $footer-header);
+    
     padding: 0 15px;
-    background: $footer-header;
-  
+
     .color-span{
         color: #EEAD33;
       }
@@ -393,9 +399,8 @@ body {
         color: white;
       }
   }
-
   .main-footer{
-    background: $footer-header;
+    @include bg-footer-header($bg-footer-header: $footer-header);
     color: #828282;
 
     .container {
