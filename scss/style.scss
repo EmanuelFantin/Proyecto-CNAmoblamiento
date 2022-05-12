@@ -182,13 +182,13 @@ body {
     margin: 10px;
 
     &:first-child{
-        background: $facebook-color;
+        background: $fa-facebook-f;
       }
     &:nth-child(2){
-    background: $instagram-color;
+    background: $fa-instagram;
   }
     &:nth-child(3){
-    background:$whatsapp-color;
+    background: $fa-whatsapp
   }
   i{
     color: white;
@@ -447,13 +447,13 @@ body {
         border-radius: 50%;
       }
       .fa-facebook-f{
-        background: $facebook-color;
+        background: $fa-facebook-f;
       }
       .fa-instagram{
-        background: $instagram-color;
+        background: $fa-instagram;
       }
       .fa-whatsapp{
-        background: $whatsapp-color;
+        background: $fa-whatsapp;
       }
 
   }
@@ -488,6 +488,12 @@ body {
 .file {
   margin-left: 23rem;
 }
+#file-ip-1-preview {
+  text-align: center;
+  width:100%;
+  display:none;
+  margin-bottom:30px;
+}
   .p-cotizacion {
   text-align: center;
 }
@@ -495,14 +501,6 @@ body {
     background: $main-color;
     border-bottom: 1.5em;
     border-radius: 5px;
-  }
-  .nombre-mensaje{
-    width: 70%;
-    margin-left: 10rem;
-  }
-  .email-asunto{
-    width: 70%;
-    margin-left: 10rem;
   }
 
   /*grid proyectos*/
@@ -1128,12 +1126,4 @@ main {
 	.categorias {
 		grid-template-columns: 1fr;
 	}
-}
-@font-face {
-  font-family: "Frauces";
-  src: url(../fonts/Frauces.ttf);
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
 }
