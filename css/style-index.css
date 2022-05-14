@@ -1040,7 +1040,7 @@ body .container--flex {
   padding: 0 15px;
 }
 .main-header .color-span {
-  color: #EEAD33;
+  color: #B8B8B8;
 }
 .main-header .main-title {
   color: white;
@@ -1049,7 +1049,7 @@ body .container--flex {
 /*estilos del menu*/
 .icon-menu {
   font-size: 1.5em;
-  color: #EEAD33;
+  color: #B8B8B8;
   border: 1px solid white;
   display: block;
   padding: 5px 12px;
@@ -1172,7 +1172,7 @@ body .container--flex {
   background: #09ff00;
 }
 .nav-social__item i {
-  color: white;
+  color: #212121;
 }
 
 /*estilos del banner*/
@@ -1429,7 +1429,7 @@ body .container--flex {
   width: 35px;
   height: 35px;
   text-align: center;
-  color: white;
+  color: #212121;
   padding: 10px;
   border-radius: 50%;
 }
@@ -1504,6 +1504,19 @@ body .container--flex {
   height: 100%;
   object-fit: cover;
   border-radius: 1em;
+  filter: brightness(70%);
+  animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar {
+  to {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(1.015);
+  }
+}
+.gallery__img:hover {
+  filter: brightness(100%);
 }
 
 .gallery__item {
@@ -1619,12 +1632,6 @@ body .container--flex {
 }
 
 /*preguntas frecuentes*/
-:root {
-  --primario: #000000;
-  --gris-claro: #B8B8B8;
-  --sombra: 0 0 13px 0 rgba(185,185,185, 1);
-}
-
 main {
   max-width: 1000px;
   width: 90%;
@@ -1653,32 +1660,32 @@ main {
   border-radius: 10px;
   background: #fff;
   font-weight: 700;
-  color: var(--gris-claro);
+  color: #B8B8B8;
   border: 2px solid transparent;
   transition: 0.3s ease all;
 }
 .categoria:hover {
-  box-shadow: var(--sombra);
+  box-shadow: 0 0 13px 0 rgb(185, 185, 185);
   color: #000;
 }
 .categoria:hover path {
-  fill: var(--primario);
+  fill: #000000;
 }
 .categoria svg {
   width: 64px;
   margin-bottom: 10px;
 }
 .categoria path {
-  fill: var(--gris-claro);
+  fill: #B8B8B8;
   transition: 0.3s ease all;
 }
 
 .categoria.activa {
-  border: 2px solid var(--primario);
+  border: 2px solid #000000;
   color: #000;
 }
 .categoria.activa path {
-  fill: var(--primario);
+  fill: #000000;
 }
 
 /*! contenedor preguntas */
@@ -1702,11 +1709,11 @@ main {
   cursor: pointer;
 }
 .contenedor-pregunta:hover {
-  box-shadow: var(--sombra);
+  box-shadow: 0 0 13px 0 rgb(185, 185, 185);
 }
 
 .contenedor-pregunta.activa {
-  border: 2px solid var(--primario);
+  border: 2px solid #000000;
 }
 
 /*!  preguntas */

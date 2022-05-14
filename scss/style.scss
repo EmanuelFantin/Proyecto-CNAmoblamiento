@@ -5,6 +5,12 @@
   background: $footer-header;
 }
 
+$cotizaciones:(
+    background: $main-color,
+    border-bottom: 1.5em,
+    border-radius: 5px,
+    );
+
  /*ver mas*/
 
  .main-ver-mas{
@@ -56,7 +62,7 @@ body {
     padding: 0 15px;
 
     .color-span{
-        color: #EEAD33;
+        color: $gris-claro;
       }
       .main-title {
         color: white;
@@ -67,7 +73,7 @@ body {
   .icon-menu{
 
     font-size: 1.5em;
-    color: #EEAD33;
+    color: $gris-claro;
     border: 1px solid white;
     display: block;
     padding: 5px 12px;
@@ -79,7 +85,7 @@ body {
     position: absolute;
     top: 80px;
     left: 0;
-    background: $footer-header;;
+    background: $footer-header;
     width: 100%;
     list-style: none;
     padding: 20px;
@@ -191,7 +197,7 @@ body {
     background: $fa-whatsapp
   }
   i{
-    color: white;
+    color: #212121;
   }
   }
   
@@ -442,7 +448,7 @@ body {
         width: 35px;
         height: 35px;
         text-align: center;
-        color: white;
+        color: #212121;
         padding: 10px;
         border-radius: 50%;
       }
@@ -498,9 +504,9 @@ body {
   text-align: center;
 }
   .cotizaciones{
-    background: $main-color;
-    border-bottom: 1.5em;
-    border-radius: 5px;
+    background: map-get($cotizaciones, background);
+    border-bottom: map-get($cotizaciones, border-bottom);
+    border-radius: map-get($cotizaciones, border-radius);
   }
 
   /*grid proyectos*/
@@ -517,7 +523,23 @@ body {
         height: 100%;
         object-fit: cover;
         border-radius: 1em;
+        filter: brightness(70%);
+        animation: escalar 1.5s infinite alternate;
+
+        @keyframes escalar{
+          to{
+            transform: scale(1);
+          }
+          from{
+            transform: scale(1.015);
+          }
+        }
+
+        &:hover {
+          filter: brightness(100%);
+        }
       }
+
     .gallery__item {
       position: relative;
 
@@ -658,11 +680,6 @@ body {
    
 /*preguntas frecuentes*/
 
-:root {
-	--primario: #000000;
-	--gris-claro: #B8B8B8;
-	--sombra: 0 0 13px 0 rgba(185,185,185, 1);
-}
 main {
 	max-width: 1000px;
 	width: 90%;
@@ -690,17 +707,17 @@ main {
 	border-radius: 10px;
 	background: #fff;
 	font-weight: 700;
-	color: var(--gris-claro);
+	color: $gris-claro;
 	border: 2px solid transparent;
 	transition: .3s ease all;
 
     &:hover {
-        box-shadow: var(--sombra);
+        box-shadow: $sombra;
         color: #000;
     }
 
     &:hover path {
-        fill: var(--primario);
+        fill: $primario;
     }
 
     svg {
@@ -709,17 +726,17 @@ main {
     }
 
     path {
-        fill: var(--gris-claro);
+        fill: $gris-claro;
         transition: .3s ease all;
     }
 }
 
 .categoria.activa {
-	border: 2px solid var(--primario);
+	border: 2px solid $primario;
 	color: #000;
 
     path {
-        fill: var(--primario);
+        fill: $primario;
     }
 }
 
@@ -744,12 +761,12 @@ main {
 	cursor: pointer;
 
     &:hover {
-        box-shadow: var(--sombra);
+        box-shadow: $sombra;
     }
 }
 
 .contenedor-pregunta.activa {
-	border: 2px solid var(--primario);
+	border: 2px solid $primario;
 }
 
 /*!  preguntas */
