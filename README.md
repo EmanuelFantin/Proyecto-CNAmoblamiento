@@ -2,5 +2,5 @@
 
 * Se transcribió el CSS a SASS
 * Se agregó variables, mapas, mixin para reutilizar código
-* Se agrego m{as animaciones, a las imágenes y al hacer scroll 
+* Se agrego más animaciones, a las imágenes y al hacer scroll 
 * Se actualizó - SEO - (ETIQUETAS META)
