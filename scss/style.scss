@@ -396,7 +396,7 @@ body {
     display: block;
     border: black;
     padding: 15px;
-    width: 20%;
+    width: auto;
     color: rgb(0, 0, 0);
     font-size: 1em;
 
@@ -492,7 +492,9 @@ body {
   /*cotizacion*/
 
 .file {
-  margin-left: 23rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
 }
 #file-ip-1-preview {
   text-align: center;
@@ -889,8 +891,8 @@ main {
   grid-column: span 1;
 }
 }
-
 }
+
 @media screen and (min-width:451px) and (max-width:960px) {
   .gallery-conteiner {
   grid-template-columns: repeat(3, 1fr);
@@ -1007,9 +1009,6 @@ main {
 &:nth-child(27) {
   grid-column : span 2;
   grid-row : span 2;
-}
-.form__submit{
-  width: 40%;
 }
 }
 }

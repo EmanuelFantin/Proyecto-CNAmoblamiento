@@ -1372,7 +1372,7 @@ body .container--flex {
   display: block;
   border: black;
   padding: 15px;
-  width: 20%;
+  width: auto;
   color: rgb(0, 0, 0);
   font-size: 1em;
 }
@@ -1470,7 +1470,9 @@ body .container--flex {
 
 /*cotizacion*/
 .file {
-  margin-left: 23rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
 }
 
 #file-ip-1-preview {
@@ -1951,9 +1953,6 @@ main {
   .gallery__item:nth-child(27) {
     grid-column: span 2;
     grid-row: span 2;
-  }
-  .gallery__item .form__submit {
-    width: 40%;
   }
 }
 @media screen and (min-width: 820px) {
